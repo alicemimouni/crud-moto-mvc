@@ -33,7 +33,7 @@
 
             //TRIER PAR TYPE
                 echo('<li class="nav-item">
-                <a class="nav-link" href="index.php?controller=moto&action="mototype">Trier par type</a>
+                <a class="nav-link" href="index.php?controller=moto&action=mototype">Trier par type</a>
                 </li>');
 
             //CONNEXION
