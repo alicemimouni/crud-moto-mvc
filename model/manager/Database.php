@@ -1,8 +1,8 @@
 <?php
 
 abstract class Database {
+    
     protected $db;
-
     private $host = 'localhost';
     private $dbName = 'exam_moto_poo_alice';
     private $user = 'root';
@@ -17,6 +17,5 @@ abstract class Database {
         }
     }
 }
-
 
 ?>
