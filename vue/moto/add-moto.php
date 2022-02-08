@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr
-">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter une moto</title>
+    
     <?php
         include 'vue/parts/stylesheets.php';
     ?>
+    
 </head>
 
 <body>
+    
     <?php
         include 'vue/parts/menu.php';
     ?>
+    
     <div class="container">
         <h2 class="text-uppercase mb-4 mt-4">Ajouter une moto</h2>
-
         <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="brand">Marque</label>
@@ -36,16 +38,14 @@
                 <label for="image">Image</label><br>
                 <input type="file" name="image">
             </div>
-
             <button type="submit" class="btn btn-danger">Ajouter</button>
         </form>
 
         <?php
-
-    require 'vue/parts/errors-forms.php';
-    ?>
+            require 'vue/parts/errors-forms.php';
+        ?>
+        
     </div>
-
 
 </body>
 
