@@ -8,25 +8,25 @@
             $this->motoManager = new MotoManager();
         }   
 
-    //RECUPERE LA LISTE DES MOTOS
+    //GET ALL MOTOS
         public function list() {
             $motos = $this->motoManager->getAll();
             require 'vue/moto/list.php';
         }
 
-    //RECUPERE LES MOTOS TRIEES PAR TYPE
+    // GET MOTOS SORTED BY TYPE
         public function mototype() {
             $motos = $this->motoManager->motoByType();
             require 'vue/moto/mototype.php';
         }
 
-    //RECUPERE LE DETAIL D UNE MOTO
+    //GET MOTO DETAIL
         public function detail($id) {
             $moto = $this->motoManager->getOne($id);
             require 'vue/moto/detail.php';
         }
 
-    //AJOUTE UNE MOTO
+    //ADD A MOTO
         public function add() {
             $errors =[];
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -65,7 +65,7 @@
 
         }
 
-    //ERREURS FORMULAIRES
+    // FORM ERRORS
         private function getFormErrors($id = null) {
             $errors = [];
             if(empty($_POST['brand'])) {
@@ -85,7 +85,7 @@
             return $errors;
         }
 
-    //UPLAOD FILE
+    //UPLOAD FILE
         private function uploadFile() {
             $extensionAllowed = ['image/jpeg', 'image/png'];
             $errors = [];
