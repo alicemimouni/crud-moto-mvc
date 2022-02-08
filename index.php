@@ -22,11 +22,11 @@ session_start();
 //MOTO
     if($_GET['controller'] == 'moto'){
         $controller = new MotoController();
-    //AFFICHE LES MOTOS
+    //SHOW ALL MOTOS
         if($_GET['action'] == 'list'){
             $controller->list();
         }
-    //TRI PAR TYPES
+    //SORT BY TYPE
         if($_GET['action'] == 'mototype') {
             $controller->mototype();
         }
