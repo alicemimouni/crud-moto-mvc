@@ -2,9 +2,9 @@
 
     class MotoManager extends Database {
 
-//FONCTION QUI RECUPERE TOUTES LES MOTOS
-        public function getAll(){
-            try{
+//GET ALL MOTOS
+        public function getAll() {
+            try {
             $request = $this->db->prepare('SELECT * FROM moto');
             $request->execute();
             $result = $request->fetchAll();
@@ -16,7 +16,7 @@
                 throw $e;
             }
         }
-//FONCTION QUI RECUPERE LES MOTOS TRIEES PAR TYPE
+// GET MOTOS SORTED BY TYPE
         public function motoByType() {
             try{
                 $motos = [];
@@ -34,7 +34,7 @@
             }   
         }
 
-//FONCTION QUI RECUPERE UNE MOTO EN FONCTION DE SON ID
+// GET ONE MOTO BY ID
     public function getOne($id) {
 
         $moto = null;
@@ -47,7 +47,7 @@
         return $moto;
     }
   
-//RECUPERE UNE MOTO EN FONCTION DE SON MODELE
+// GET ONE MOTO BY MODEL
     public function getByModele($modele) {
         $moto = null;
         $request = $this->db->prepare('SELECT * FROM moto WHERE modele = :modele');
@@ -59,7 +59,7 @@
         return $moto;
     }
 
-// SUPPRIME UNE MOTO
+// DELETE MOTO
         public function delete(Moto $moto) {
             try{
                 $request = $this->db->prepare('DELETE FROM moto WHERE idMoto = :idMoto');
@@ -70,7 +70,7 @@
             }
         }
 
-// INSERE UNE MOTO
+// ADD MOTO
         public function add(Moto $moto) {
             try {
                 $request = $this->db->prepare('INSERT INTO moto (brand, modele, image, type) VALUES (:brand, :modele, :image, :type)');
@@ -84,11 +84,11 @@
                 }
             }
                
-//FONCTION QUI TRANSFORME ARRAY EN OBJETS
-        public function arrayResultToArrayObject($arrayOfArray){
+// CHANGE ARRAY TO OBJECT
+        public function arrayResultToArrayObject($arrayOfArray) {
             $arrayMoto = [];
             
-            foreach($arrayOfArray as $elem){
+            foreach($arrayOfArray as $elem) {
                 $arrayMoto[] = new Moto($elem['brand'], $elem['modele'], $elem['image'], $elem['type'], $elem['idMoto']);
             }
             return $arrayMoto;
