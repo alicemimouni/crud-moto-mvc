@@ -3,7 +3,7 @@
         public $utilisateur;
 
         public function __construct(){
-           // REDIRIGE LES UTILISATEURS NON CONNECTES
+           // REDIRECTS USERS WHO ARE NOT LOGGED IN
             if(!isset($_SESSION['utilisateur'])){
                 header('Location: index.php?controller=security&action=login');
             }
