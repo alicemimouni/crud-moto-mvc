@@ -26,7 +26,7 @@
         public function setBrand($brand) {
             $this->brand  = $brand;
         }
-//MODELE
+//MODEL
         public function getModele(){
             return $this->modele;
         }
