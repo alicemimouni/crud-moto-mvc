@@ -7,7 +7,7 @@ class SecurityController{
         $this->utilisateurManager = new UtilisateurManager();
     }
 
-//CONNEXION
+//     LOGIN
     public function login() {
         
         $errors = [];
@@ -29,8 +29,9 @@ class SecurityController{
             } 
             else {
                 $utilisateur = $userWithThisUsername;
-
+                // password_verify : check if password corresponds to the hashed password
                 if(password_verify($_POST['password'], $utilisateur->getPassword())){
+                    // serialize : change to string
                    $_SESSION['utilisateur'] = serialize($utilisateur); 
                    header("Location: index.php?controller=moto&action=list");
                 } 
@@ -43,8 +44,9 @@ class SecurityController{
             }
         }
 
-    }
-//DECONNEXION
+    } 
+    
+//     LOGOUT
     public function logout() {
         session_destroy();
         header('Location: index.php?controller=security&action=login');
