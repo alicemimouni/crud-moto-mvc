@@ -1,4 +1,5 @@
 <?php
+
 class Utilisateur {
 
     private $id;
@@ -10,6 +11,7 @@ class Utilisateur {
         $this->password = $password;
         $this->id = $id;
     }
+    
 //ID
     public function getId() {
         return $this->id;
@@ -17,6 +19,7 @@ class Utilisateur {
     public function setId($id) {
         $this->id = $id;
     }
+    
 //USERNAME
     public function getUsername() {
         return $this->username;
@@ -24,6 +27,7 @@ class Utilisateur {
     public function setUsername($username) {
         $this->username = $username;
     }
+    
 //PASSWORD
     public function getPassword() {
         return $this->password;
