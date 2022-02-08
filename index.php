@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+    session_start();
 
     require 'autoload.php';
 
@@ -8,10 +9,10 @@ session_start();
     }
 
 //SECURITY
-    if($_GET['controller'] == 'security'){
+    if($_GET['controller'] == 'security') {
         $controller = new SecurityController();
         
-        if($_GET['action'] == 'login'){
+        if($_GET['action'] == 'login') {
             $controller->login();
         }
         if($_GET['action'] == 'logout') {
@@ -20,10 +21,10 @@ session_start();
     }
 
 //MOTO
-    if($_GET['controller'] == 'moto'){
+    if($_GET['controller'] == 'moto') {
         $controller = new MotoController();
     //SHOW ALL MOTOS
-        if($_GET['action'] == 'list'){
+        if($_GET['action'] == 'list') {
             $controller->list();
         }
     //SORT BY TYPE
@@ -53,9 +54,6 @@ session_start();
                 echo('Action interdite');
             }
         }
-
     }
-
-    
 
 ?>
