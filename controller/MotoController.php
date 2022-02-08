@@ -1,5 +1,5 @@
 <?php
-    class MotoController extends AuthentifController{
+    class MotoController extends AuthentifController {
         
         private $motoManager;
 
