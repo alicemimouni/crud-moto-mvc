@@ -4,7 +4,7 @@ abstract class Database {
     
     protected $db;
     private $host = 'localhost';
-    private $dbName = 'exam_moto_poo_alice';
+    private $dbName = 'db_moto_alice';
     private $user = 'root';
     private $passWord = '';
 

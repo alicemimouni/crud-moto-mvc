@@ -13,12 +13,12 @@
    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="" width="50px" alt="MOTOTOP"></a>
+        <a class="navbar-brand" href="#"><img src="" width="50px" alt="MotoTop"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav w-100 d-flex align-items-center justify-content-around">
             <li class="nav-item">
               <a class="nav-link" href="index.php?controller=moto&action=list">Liste des motos</a>
             </li>
