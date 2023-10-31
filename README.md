@@ -15,10 +15,9 @@ J'ai aussi réalisé un système de connexion sécurisé. [Voir le code du formu
 ## Technologies utilisées
 
 Côté frontend, j'ai utilisé la librairie **Bootstrap** pour obtenir plus rapidement une interface esthétique.
-Pour le backend, ce projet est réalisé en **PHP** avec une base de données **MySQL**.
+Pour le backend, ce projet est réalisé en **PHP** avec une base de données **MySQL**. [Voir le code de la base de données](db_moto_alice.sql)
 
-Travaillant sur Windows, j'ai utilisé **Wampserver** et **MySQLWorbench**.
-
+Travaillant sur Windows, j'ai utilisé **Wampserver** et **MySQLWorbench**. 
 ## Conclusion
 
 Cette application créée dans le cadre d'une évaluation m'a permis de monter en compétence en PHP et également de savoir gérer le temps puisque je disposais de quelques heures pour le réaliser.
