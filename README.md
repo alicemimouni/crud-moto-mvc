@@ -9,6 +9,9 @@ Je devais créer une application permettant aux employés d'une boutique de moto
 
 J'ai réalisé un **CRUD** (Create, Read, Update, Delete) en utilisant l'**architecture MVC** (Modèle-Vue-Contrôleur). 
 
+J'ai aussi réalisé un système de connexion sécurisé. [Voir le code du formulaire](vue/security/login.php)
+
+
 ## Technologies utilisées
 
 Côté frontend, j'ai utilisé la librairie **Bootstrap** pour obtenir plus rapidement une interface esthétique.
