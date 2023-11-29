@@ -7,7 +7,7 @@
             if(!isset($_SESSION['utilisateur'])) {
                 header('Location: index.php?controller=security&action=login');
             }
-            else{
+            else {
                 $this->utilisateur = unserialize($_SESSION['utilisateur']);
             }
         }
