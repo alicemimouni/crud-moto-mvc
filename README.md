@@ -15,7 +15,7 @@ J'ai aussi réalisé un système de connexion sécurisé. [Voir le code du formu
 ## Technologies utilisées
 
 Côté frontend, j'ai utilisé la librairie **Bootstrap** pour obtenir plus rapidement une interface esthétique.
-Pour le backend, ce projet est réalisé en **PHP** avec une base de données **MySQL**. [Voir le code de la base de données](db_moto_alice.sql)
+Pour le backend, ce projet est réalisé en **PHP** avec une base de données **MySQL**.
 
 Travaillant sur Windows, j'ai utilisé **Wampserver** et **MySQLWorbench**. 
 ## Conclusion
