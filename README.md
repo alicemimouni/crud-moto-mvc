@@ -1,6 +1,6 @@
  # CRUD MOTO MVC PHP
 
-![crud-php-moto-mvc](https://github.com/alicemimouni/crud-moto-mvc/assets/82211729/26951265-c735-4b5f-843d-bd6a3b665a0f)
+![Capture d’écran (60)](https://github.com/alicemimouni/crud-moto-mvc/assets/82211729/cb0c2865-8bdf-4b1b-9b4b-20cabdbd7950)
 
 ## Présentation
 
@@ -10,6 +10,7 @@ J'ai réalisé un **CRUD** (Create, Read, Update, Delete) en utilisant l'**archi
 
 J'ai aussi réalisé un système de connexion sécurisé. [Voir le code du formulaire](vue/security/login.php)
 
+![Capture d’écran (61)](https://github.com/alicemimouni/crud-moto-mvc/assets/82211729/1b010774-a3e8-43df-9356-bb4b6435cbc4)
 
 ## Technologies utilisées
 
