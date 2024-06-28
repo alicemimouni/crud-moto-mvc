@@ -1,7 +1,5 @@
  # CRUD MOTO MVC PHP
 
-![Capture d’écran (60)](https://github.com/alicemimouni/crud-moto-mvc/assets/82211729/cb0c2865-8bdf-4b1b-9b4b-20cabdbd7950)
-
 ## Présentation
 
 J'ai développé une application permettant aux employés d'une boutique de motos de gérer les motos disponibles. Ceci est un exercice.
@@ -18,9 +16,6 @@ Côté frontend, j'ai utilisé la librairie **Bootstrap** pour obtenir plus rapi
 Pour le backend, ce projet est réalisé en **PHP** avec une base de données **MySQL**.
 Travaillant sur Windows, j'ai utilisé **Wampserver** et **MySQLWorbench**. 
 
-## Conclusion
-
-Cette application permet de bien comprendre l'architecture MVC, et de savoir faire un CRUD ainsi qu'un système de connexion sécurisé.
 
 
 
