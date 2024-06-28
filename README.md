@@ -1,5 +1,8 @@
  # CRUD MOTO MVC PHP
 
+ ![crud-mvc-php](https://github.com/alicemimouni/crud-moto-mvc/assets/82211729/dd353e9d-ab65-44de-9dc7-a94cd9ec3756)
+
+
 ## Présentation
 
 J'ai développé une application permettant aux employés d'une boutique de motos de gérer les motos disponibles. Ceci est un exercice.
